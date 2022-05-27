@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MAIN STYLE*/
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{ font-size: 2.5rem; }
+h2{ font-size: 2rem; }
+
+p{
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.7em;
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*UTILIDADES CLASES*/
+.container{
+    margin: auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.large{
+    font-size: 1.25rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.display-1{
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.btn{
+    display: inline-block;
+    padding: 12px 23px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.btn-dark {
+    background: #4d4d4d;
+    color: #fff;
+    border: none;
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+form .form-group {
+    margin-bottom: 16px;
+}
+
+form .form-control {
+    display: block;
+    width: 100%;
+    padding: 7px 12px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+    background: #4d4d4d;
+    border: 1px solid #4d4d4d;
+    border-radius: 4px;
+}
+
+/*NAVBAR*/
+#navbar {
+background: #000;
+color: #fff;
+overflow: auto;
+padding-top: 20px;
+height: 11vh;
+}
+
+#navbar a  {
+    color: #fff;
+}
+
+#navbar .logo {
+    float: left;
+    padding-top: 16px;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#navbar ul {
+    list-style: none;
+    float: right;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center
+}
+
+/*imagen 1*/
+#showcase {
+background: url('../img/barriles.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 90vh;
+color: #fff;
+text-align: center;
+padding: 350px;
+}
+
+#showcase h1 {
+    font-weight: 200;
+    font-size: 4rem;
+}
+
+#showcase p {
+    font-size: 1.7rem;
+}
+
+/*NOSOTROS*/
+#nosotros {
+height: 100vh;
+background: #000;
+color: #fff;
+}
+
+.nosotros-background {
+    float: left;
+    width: 50%;
+    background: url('../img/vinos.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.nosotros-text{
+    float: right;
+    width: 50%;
+    padding: 50px;
+}
+
+.nosotros-text h2 {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate
+{
+    0%,10%,100%
+    {
+        width: 0%;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+
+/* VINOS */
+
+#vinos {
+    height: 100vh;
+}
+
+.vinos-title {
+    float: left;
+    width: 50%;
+    background: #000;
+    color: #fff;
+    height: 100vh;
+    text-align: center;
+    padding: 200px 90px;   
+}
+
+
+.vinos-title h2 {
+    padding-top: 120px;
+    animation: animate 6s linear infinite;  
+}
+@keyframes animate
+{
+    0%,10%,100%
+    {
+        width: 0%;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+
+.vinos-text {
+    background: #fff;
+    color: #000;
+    float: right;
+    width: 50%;
+    padding: 50px;
+}
+
+.vinos-text p:first-child{
+    padding-top: 210px;
+}
+
+/*BACKGROUND*/
+#background {
+    height: 100vh;
+}
+
+.background-left {
+    background: url('../img/uvas.jpg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    height: 100vh;
+    float:left;
+    width: 50%;
+}
+
+.background-right {
+    background: url('../img/ralph-darabos-68eJgnkRckM-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    height: 100vh;
+    float:right;
+    width: 50%;
+}
+
+/*CONTACTO*/
+
+#contacto {
+    height: 100vh;
+}
+
+.contact-form {
+    float: left;
+    width: 50%;
+    background: #000;
+    color: #fff;
+    height: 100vh;
+    padding: 200px 90px;
+}
+
+.contact-title {
+background: #fff;
+color: #000;
+float: right;
+width: 50%;
+padding: 50px;
+}
+
+.contact-title h2{
+    padding-top: 300px;
+    text-align: center;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate
+{
+    0%,10%,100%
+    {
+        width: 0%;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+
+/*UBICACION*/
+.ubicacion-title {
+    float: right;
+    width: 50%;
+    background: #000;
+    color: #fff;
+    height: 65vh;
+    text-align: center;
+    padding: 200px 90px;  
+}
+
+.ubicacion-title h2 {
+    padding-top: 50px;
+    animation: animate 6s linear infinite;  
+}
+@keyframes animate
+{
+    0%,10%,100%
+    {
+        width: 0%;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+
+/*MAINFOOTER*/
+#mainfooter {
+    background: #000;
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/*FORMULARIO*/
+
+.warnings {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: green;
+    padding-top: 20px;
+}
+
